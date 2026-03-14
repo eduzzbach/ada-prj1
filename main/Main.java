@@ -67,7 +67,8 @@ public class Main {
 
 
         // for now lets assume a SINGULAR test case, then once it works we refactor for multiple test case compatibility (should be straightforward)
-
+        //int numTestCases = Integer.parseInt(bufferedReader.readLine());
+        //for(int i = 0; i<=numTestCases;i++)
 
         // Reads the problem basically
         String testCaseInfo = bufferedReader.readLine();
@@ -90,18 +91,13 @@ public class Main {
         }
 
         System.out.println(mapLayout);
-
+    }
+/* 
         String[][] board = buildBoard(Integer.parseInt(parts[0]), Integer.parseInt(parts[1]), bufferedReader);
         
         System.out.println(turnModulo(solver(board, Integer.parseInt(parts[2]), Integer.parseInt(parts[3])))); //ya eu sei q isto tá trágico
 
         }
-
-    }
-    /**
-     * Method used to create the board by receiving the rows and columns 
-     * 
-     */
     private static String[][] buildBoard(int rows, int columns, BufferedReader br) throws IOException{
         String[][] board = new String[rows][columns];
         for(int i = 0; i < rows; i++){
@@ -114,6 +110,7 @@ public class Main {
 
         return board;
     }
+ */   
     /**
     // possible movements: R- right; 
     //                     D - down; 
@@ -134,3 +131,4 @@ public class Main {
         }
 
 }
+
